@@ -8,3 +8,6 @@ A tiny task-list CLI I'm using to learn Git and GitHub.
 python tasks.py add "buy milk"
 python tasks.py list
 ```
+## Requirements
+
+Python 3.8 or newer.
