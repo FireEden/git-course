@@ -1,0 +1,7 @@
+# Local data the repo shouldn't track
+tasks.txt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
