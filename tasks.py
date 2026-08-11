@@ -19,7 +19,7 @@ def show():
         lines = []
 
     if not lines:
-        print("no tasks yet")
+        print('no tasks yet — add one with: python tasks.py add "..."')
         return
 
     for i, line in enumerate(lines, start=1):
