@@ -25,6 +25,23 @@ def show():
     for i, line in enumerate(lines, start=1):
         print(f"{i}. {line}")
 
+def done(number):
+    try:
+        with open(TASK_FILE, encoding="utf-8") as f:
+            lines = [line.strip() for line in f if line.strip()]
+    except FileNotFoundError:
+        lines = []
+
+    if number < 1 or number > len(lines):
+        print("no task number", number)
+        return
+
+    finished = lines.pop(number - 1)
+    with open(TASK_FILE, "w", encoding="utf-8") as f:
+        for line in lines:
+            f.write(line + "\n")
+    print("done:", finished)
+
 
 def main():
     args = sys.argv[1:]
@@ -32,8 +49,11 @@ def main():
         add(" ".join(args[1:]))
     elif args and args[0] == "list":
         show()
+    elif args and args[0] == "done" and len(args) > 1:
+        done(int(args[1]))
     else:
-        print("usage: python tasks.py [add <text> | list]")
+        print("usage: python tasks.py [add <text> | list | done <number>]")
+
 
 
 if __name__ == "__main__":
