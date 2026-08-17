@@ -50,7 +50,12 @@ def main():
     elif args and args[0] == "list":
         show()
     elif args and args[0] == "done" and len(args) > 1:
-        done(int(args[1]))
+        try:
+            number = int(args[1])
+        except ValueError:
+            print("not a number:", args[1])
+            return
+        done(number)
     else:
         print("usage: python tasks.py [add <text> | list | done <number>]")
 
