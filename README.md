@@ -1,6 +1,7 @@
 # git-course
 
-A tiny task-list CLI I'm using to learn Git and GitHub.
+A tiny task-list CLI for learning Git and GitHub.
+
 
 ## Usage
 
