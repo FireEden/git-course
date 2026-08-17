@@ -1,6 +1,6 @@
 # git-course
 
-A tiny task-list CLI I'm using to learn Git and GitHub.
+A minimal command-line task tracker, built while learning Git.
 
 ## Usage
 
