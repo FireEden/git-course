@@ -16,8 +16,9 @@ Python 3.8 or newer.
 
 ## Notes
 
-[GIT-NOTES.md](GIT-NOTES.md) is the reference I built while working through this
-repo — the staging model, the branch-to-PR workflow, undo commands, and merge
-conflicts. There's also a [formatted version][card] of the same material.
+Here is the [formatted version][card] for reference while working through this repo. 
+It contains bite sized info on the staging model, the branch-to-PR workflow, undo commands, and merge
+conflicts. 
+[GIT-NOTES.md](GIT-NOTES.md) is the markdown version.
 
 [card]: https://claude.ai/code/artifact/83817e7e-623a-4de8-b893-dbca8c052403
